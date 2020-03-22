@@ -5,10 +5,13 @@
 
 body {
   padding-top: 60px;
+  font-family: 'Courier New', sans-serif;
+  font-size: 14px;
+  background: #eee;
 }
 
 section {
-  overflow: auto;
+  // overflow: auto;
 }
 
 textarea {
@@ -101,4 +104,122 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+
+/* work */
+.cover {
+  background: url(img/nixie.jpg);
+  /* background-size: cover; */
+  background-size: auto;
+}
+
+.container--extend {
+  margin: 20px auto;
+  /* width: 365px; */
+  width: 560px;
+  /* height: 500px; */
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.controls {
+  /* overflow: hidden; */
+  /* height: 80px; */
+  display: grid;
+  grid-template-areas:
+    "mi mi mp mp . . se se sp sp . . . . re re . st st"
+    "mi mi mm mm . . se se sm sm . . . . re re . st st";
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.dropdown-menu {
+  min-width: inherit;
+  z-index: 100;
+}
+
+#timer-name{
+  float: left;
+
+}
+
+#timer-name:hover {
+  color: brown;
+  cursor: pointer;
+}
+
+#vol-slide{
+  float: right;
+}
+
+#vol-icon:hover{
+  color: brown;
+  cursor: pointer;
+}
+
+#timer {
+  background: rgba(255, 217, 0, 0.63);
+  height: 120px;
+  line-height: 120px;
+  font-size: 60px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+}
+
+#min {
+  grid-area: mi;
+}
+
+#min-plus {
+  grid-area: mp;
+}
+
+#min-minus {
+  grid-area: mm;
+}
+
+#sec {
+  grid-area: se;
+}
+
+#sec-plus {
+  grid-area: sp;
+}
+
+#sec-minus {
+  grid-area: sm;
+}
+
+#reset {
+  grid-area: re;
+}
+
+#start {
+  grid-area: st;
+}
+
+.play-style {
+  color: lemonchiffon;
+}
+
+.pause-style {
+  color: snow;
+}
+
+.stop-style {
+  color: black;
+}
+
+#table-title {
+  font-family: 'Courier New', sans-serif;
 }
