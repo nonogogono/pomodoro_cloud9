@@ -16,6 +16,7 @@ gem 'bootstrap', '~> 4.3.1'
 # gem 'sprockets',    '~> 4.0'
 gem 'font-awesome-sass', '~> 5.4.1'
 gem 'audiojs-rails'
+gem 'twitter'
 
 group :development, :test do
   gem 'sqlite3',      '1.3.13'
