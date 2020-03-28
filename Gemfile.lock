@@ -46,6 +46,7 @@ GEM
       railties (>= 3.1)
     autoprefixer-rails (9.7.4)
       execjs
+    bcrypt (3.1.12)
     bindex (0.8.1)
     bootstrap (4.3.1)
       autoprefixer-rails (>= 9.1.0)
@@ -260,6 +261,7 @@ PLATFORMS
 
 DEPENDENCIES
   audiojs-rails
+  bcrypt (= 3.1.12)
   bootstrap (~> 4.3.1)
   byebug (= 9.0.6)
   coffee-rails (= 4.2.2)
